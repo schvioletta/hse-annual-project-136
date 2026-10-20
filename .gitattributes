@@ -1,0 +1,7 @@
+# Единые переводы строк для всех: в репозитории LF, на Windows checkout CRLF где нужно
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.ipynb text eol=lf
