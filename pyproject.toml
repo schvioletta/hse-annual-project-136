@@ -12,6 +12,7 @@ dependencies = [
     "statsmodels>=0.14",
     "holidays>=0.50",
     "jupyter>=1.0",
+    "scikit-learn>=1.9.1",
 ]
 
 [dependency-groups]
