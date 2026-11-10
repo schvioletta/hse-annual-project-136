@@ -1,0 +1,74 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Окружения ----
+.venv/
+venv/
+env/
+.python-version
+
+# ---- Секреты и локальные настройки ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+token*.json
+
+# ---- Данные: в git только пустые папки с .gitkeep (см. блок в конце файла) ----
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.zip
+*.gz
+
+# ---- Модели и эксперименты ----
+models/
+*.pt
+*.pth
+*.cbm
+*.joblib
+*.onnx
+mlruns/
+mlartifacts/
+wandb/
+lightning_logs/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ---- IDE и ОС ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Данные проекта приватные (с работы куратора), в публичный репо не попадают ни в каком виде ----
+# data/** игнорирует всё содержимое; папки открываем обратно, чтобы git видел README.md внутри
+data/**
+!data/**/
+!data/**/README.md
+*.xlsx
+*.xls
+*.json.gz
