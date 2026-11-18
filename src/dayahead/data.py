@@ -9,6 +9,7 @@ import pandas as pd
 
 TZ = "Europe/Budapest"
 TIME_COL = "timestamp"
+DEFAULT_RAW = Path(__file__).resolve().parents[2] / "data" / "raw" / "hu_dayahead_2024_2025.csv"
 
 
 def load_raw(path: str | Path) -> pd.DataFrame:
